@@ -8,21 +8,21 @@ Second-year university project, preserved as learning history. It is not a produ
 
 ## Components
 
-- `src/engine/Chess`: C#/.NET 6 chess engine (board representation, FEN, legal moves, check/checkmate/stalemate).
-- `src/engine/test`: interactive console game. Despite its directory name, this is not an automated test suite.
-- `src/server`: ASP.NET Web API / Entity Framework 6 (.NET Framework 4.7.2), SQL Server persistence and a separate bundled copy of the rules library.
-- `src/client`: .NET Framework 4.7.2 HTTP client library.
-- `src/unity`: Unity 2021.3.15f1 board interface, scenes and original project assets.
+- `engine/Chess`: C#/.NET 6 chess engine (board representation, FEN, legal moves, check/checkmate/stalemate).
+- `engine/test`: interactive console game. Despite its directory name, this is not an automated test suite.
+- `server`: ASP.NET Web API / Entity Framework 6 (.NET Framework 4.7.2), SQL Server persistence and a separate bundled copy of the rules library.
+- `client`: .NET Framework 4.7.2 HTTP client library.
+- `unity`: Unity 2021.3.15f1 board interface, scenes and original project assets.
 
 ## Running locally
 
 For the console version, install the .NET 6 SDK/runtime:
 
 ```sh
-dotnet run --project src/engine/test/test.csproj
+dotnet run --project engine/test/test.csproj
 ```
 
-Enter a listed move, press Enter for a random legal move, or enter `q` to exit. For the API use Visual Studio with the ASP.NET workload, .NET Framework 4.7.2 targeting pack and SQL Server/LocalDB; restore NuGet packages and open `src/server/ChessApi.sln`. Connection strings in `Web.config` use local Windows authentication. Database provisioning was not reconstructed or validated. Open `src/unity` with the recorded Unity editor version for the board UI; online integration is not claimed as verified.
+Enter a listed move, press Enter for a random legal move, or enter `q` to exit. For the API use Visual Studio with the ASP.NET workload, .NET Framework 4.7.2 targeting pack and SQL Server/LocalDB; restore NuGet packages and open `server/ChessApi.sln`. Connection strings in `Web.config` use local Windows authentication. Database provisioning was not reconstructed or validated. Open `unity` with the recorded Unity editor version for the board UI; online integration is not claimed as verified.
 
 ## Limitations
 
