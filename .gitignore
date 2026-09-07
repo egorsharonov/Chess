@@ -361,3 +361,17 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+# Recovered educational sources
+**/bin/
+**/obj/
+**/.vs/
+**/packages/
+**/Library/
+**/Temp/
+**/Logs/
+**/UserSettings/
+*.csproj.user
+*.suo
+.env
+*.pfx
+*.key
